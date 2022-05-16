@@ -1,0 +1,83 @@
+{
+  "$schema": "..\\..\\node_modules\\nx\\schemas\\project-schema.json",
+  "sourceRoot": "apps/component-library-docs/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/component-library-docs",
+        "index": "apps/component-library-docs/src/index.html",
+        "baseHref": "/",
+        "main": "apps/component-library-docs/src/main.tsx",
+        "polyfills": "apps/component-library-docs/src/polyfills.ts",
+        "tsConfig": "apps/component-library-docs/tsconfig.app.json",
+        "assets": [
+          "apps/component-library-docs/src/favicon.ico",
+          "apps/component-library-docs/src/assets"
+        ],
+        "styles": ["apps/component-library-docs/src/styles.scss"],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/component-library-docs/src/environments/environment.ts",
+              "with": "apps/component-library-docs/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "component-library-docs:build",
+        "hmr": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "component-library-docs:build:development"
+        },
+        "production": {
+          "buildTarget": "component-library-docs:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/component-library-docs/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/component-library-docs"],
+      "options": {
+        "jestConfig": "apps/component-library-docs/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

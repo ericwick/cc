@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "component-library-docs": "apps/component-library-docs",
+    "component-library-docs-e2e": "apps/component-library-docs-e2e"
+  }
+}
