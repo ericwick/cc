@@ -19,11 +19,14 @@
           "apps/component-library-docs/src/favicon.ico",
           "apps/component-library-docs/src/assets"
         ],
-        "styles": ["apps/component-library-docs/src/styles.scss"],
-        "scripts": [],
+        "styles": [
+          "apps/component-library-docs/src/styles.scss",
+          "libs/style-guide/src/styles.scss"
+        ],
         "stylePreprocessorOptions": {
-          "includePaths": ["libs/style-guide/src/styles.scss"]
+          "includePaths": ["libs/style-guide/src/scss"]
         },
+        "scripts": [],
         "webpackConfig": "@nrwl/react/plugins/webpack"
       },
       "configurations": {

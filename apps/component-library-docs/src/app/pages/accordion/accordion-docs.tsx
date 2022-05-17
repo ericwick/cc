@@ -8,7 +8,9 @@ export default function AccordionDocs() {
         The accordion component allows the user to show and hide sections of
         related content on a page
       </p>
-      <Accordion />
+      <Accordion title="Example Accordion 1" body="lorem ipsum" />
+      <Accordion title="Example Accordion 2" body="lorem ipsum" />
+      <Accordion title="Example Accordion 3" body="lorem ipsum" />
     </div>
   );
 }

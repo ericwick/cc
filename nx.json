@@ -21,7 +21,8 @@
         "cacheableOperations": ["build", "lint", "test", "e2e"],
         "accessToken": "MmZlMzRkOTYtNDg3MC00NWNkLWEyNzktNjMyNzYyZmYzNDBifHJlYWQtd3JpdGU="
       }
-    }
+    },
+    "useDaemonProcess": false
   },
   "targetDependencies": {
     "build": [

@@ -6,18 +6,15 @@
   "targets": {
     "build": {
       "executor": "@nrwl/web:webpack",
-      "outputs": ["{options.outPath}"],"defaultConfiguration": "production",
+      "outputs": ["{options.outPath}"],
+      "defaultConfiguration": "production",
       "options": {
         "compiler": "babel",
         "baseHref": "/",
-        "main": "libs/style-guide/src/main.tsx",
         "outputPath": "dist/libs/style-guide",
-        "tsConfig": "libs/component-library/tsconfig.json",
-        "index": "libs/component-library/src/styles.scss",
-        "styles": ["libs/style-guide/src/styles.scss"],
-        "stylePreProcessorOptions": {
-          "includePaths": ["libs/style-guide/src/styles.scss"]
-        },
+        "main": "libs/style-guide/src/styles.scss",
+        "tsConfig": "libs/style-guide/tsconfig.json",
+        "index": "libs/style-guide/src/index.html",
         "webpackConfig": "@nrwl/react/plugins/webpack"
       },
       "configurations": {

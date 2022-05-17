@@ -1,11 +1,11 @@
-import styles from './link.module.scss';
+import './link.scss';
 
 /* eslint-disable-next-line */
 export interface LinkProps {}
 
 export function Link(props: LinkProps) {
   return (
-    <div className={styles['container']}>
+    <div className="link">
       <h1>Welcome to Link!</h1>
     </div>
   );

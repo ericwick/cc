@@ -1,24 +1,17 @@
 // Abstracts
-@import 
-    './scss/abstracts/fonts',
-    './scss/abstracts/mixins',
-    './scss/abstracts/variables',
-    './scss/abstracts/visibility';
+/* eslint-disable */
+@import './scss/abstracts/fonts', './scss/abstracts/mixins',
+  './scss/abstracts/variables', './scss/abstracts/visibility';
 
 // Base Styles
-@import 
-    './scss/base/global',
-    './scss/base/reset',
-    './scss/base/typography';
+/* eslint-disable */
+@import './scss/base/global', './scss/base/reset', './scss/base/typography';
 
 // Layout
-@import 
-    './scss/layouts/footer',
-    './scss/layouts/grid',
-    './scss/layouts/page',
-    './scss/layouts/table';
+/* eslint-disable */
+@import './scss/layouts/footer', './scss/layouts/grid', './scss/layouts/page',
+  './scss/layouts/table';
 
 // Themes
-@import 
-    './scss/themes/basetheme',
-    './scss/themes/darktheme';
+/* eslint-disable */
+@import './scss/themes/basetheme', './scss/themes/darktheme';
