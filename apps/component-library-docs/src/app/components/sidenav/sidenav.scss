@@ -1,0 +1,18 @@
+.navbar {
+  position: fixed;
+  height: 100vh;
+  z-index: 1000;
+
+  &__link {
+    color: #143157;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s linear;
+
+    &:hover {
+      color: darkgray;
+      text-decoration: underline;
+    }
+  }
+}

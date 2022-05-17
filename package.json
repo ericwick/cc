@@ -5,14 +5,19 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "format": "nx format:write",
+    "lint": "nx lint"
   },
   "private": true,
   "dependencies": {
     "core-js": "^3.6.5",
     "react": "18.1.0",
     "react-dom": "18.1.0",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
     "regenerator-runtime": "0.13.7",
+    "styled-components": "^5.3.5",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
@@ -39,6 +44,7 @@
     "eslint-plugin-cypress": "^2.10.3",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-jsx-a11y": "6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "7.29.4",
     "eslint-plugin-react-hooks": "4.5.0",
     "jest": "27.5.1",

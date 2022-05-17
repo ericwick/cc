@@ -1,6 +1,4 @@
-
-
-# Cc
+# CC:
 
 This project was generated using [Nx](https://nx.dev).
 
@@ -31,33 +29,41 @@ Below are our core plugins:
 
 There are also many [community plugins](https://nx.dev/community) you could add.
 
-## Generate an application
+## Generate an application (eg. component-library-docs)
 
-Run `nx g @nrwl/react:app my-app` to generate an application.
+Run `nx g @nrwl/react:app app-name` to generate an application.
 
 > You can use any of the plugins above to generate applications as well.
 
 When using Nx, you can create multiple applications and libraries in the same workspace.
 
-## Generate a library
+## Generate a library (eg. component-library)
 
-Run `nx g @nrwl/react:lib my-lib` to generate a library.
+Run `nx g @nrwl/react:lib library-name` to generate a library.
 
 > You can also use any of the plugins above to generate libraries as well.
 
-Libraries are shareable across libraries and applications. They can be imported from `@cc/mylib`.
+Libraries are shareable across libraries and applications. They can be imported from `@cc/library-name`.
 
 ## Development server
 
-Run `nx serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+Run `nx serve my-app` for a dev server from the root (don't need to specify unless multiple apps). Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
-Run `nx g @nrwl/react:component my-component --project=my-app` to generate a new component.
+Run `nx g c component-name --project=component-library --directory=components` to generate a new component.
 
 ## Build
 
 Run `nx build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Formatting
+
+Run `nx format` to format the codebase before pushing new code to the repository.
+
+## Lint
+
+Run `nx lint` to run linting against typescript code.
 
 ## Running unit tests
 
@@ -78,8 +84,6 @@ Run `nx graph` to see a diagram of the dependencies of your projects.
 ## Further help
 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
-
-
 
 ## ☁ Nx Cloud
 

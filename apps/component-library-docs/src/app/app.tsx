@@ -1,14 +1,13 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.scss';
-import NxWelcome from './nx-welcome';
+import Sidenav from './components/sidenav/sidenav';
+import routes from './routes';
+import './app.scss';
 
-export function App() {
+export default function App() {
   return (
-    <>
-      <NxWelcome title="component-library-docs" />
-      <div />
-    </>
+    <div id="doc-site">
+      <Sidenav />
+      <div className="documentation">{routes}</div>
+    </div>
   );
 }
-
-export default App;
