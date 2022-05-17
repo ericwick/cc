@@ -4,6 +4,7 @@
   "projects": {
     "component-library": "libs/component-library",
     "component-library-docs": "apps/component-library-docs",
-    "component-library-docs-e2e": "apps/component-library-docs-e2e"
+    "component-library-docs-e2e": "apps/component-library-docs-e2e",
+    "style-guide": "libs/style-guide"
   }
 }

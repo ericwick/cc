@@ -39,7 +39,9 @@
         "babel": true
       },
       "component": {
-        "style": "scss"
+        "style": "scss",
+        "directory": "components",
+        "export": true
       },
       "library": {
         "style": "scss",

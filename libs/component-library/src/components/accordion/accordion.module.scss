@@ -1,7 +1,7 @@
-/*
- * Replace this with your own classes
- *
- * e.g.
- * .container {
- * }
-*/
+@import '../../scss/main';
+
+.accordion {
+   background-color: $warning;
+   color: black;
+   text-transform: uppercase;
+}

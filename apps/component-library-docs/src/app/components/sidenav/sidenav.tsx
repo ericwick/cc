@@ -6,6 +6,8 @@ import { StyledSidenav } from './sidenav.styled';
 import { useOnClickOutside } from './menu-hook';
 import './sidenav.scss';
 
+// import * as sass from '@cc/style-guide';
+
 export default function Sidenav() {
   const [open, setOpen] = useState<boolean>(false);
   const menu = useRef<HTMLDivElement>(null);
@@ -15,7 +17,7 @@ export default function Sidenav() {
   const tabIndex = isHidden ? 0 : -1;
 
   useOnClickOutside(menu, () => setOpen(false));
-
+  // console.log(sass);
   return (
     <nav ref={menu} className="navbar">
       <Hamburger open={open} setOpen={setOpen} aria-controls={menuId} />

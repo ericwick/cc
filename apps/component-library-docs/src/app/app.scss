@@ -1,6 +1,9 @@
+// @import '@cc/style-guide';
+
 #doc-site {
   display: flex;
   flex-direction: row;
+  // background-color: $warning;
 }
 .documentation {
   margin: 0 0 0 9%;
@@ -21,12 +24,6 @@ body {
   line-height: inherit;
   margin: 0;
 }
-h1,
-h2,
-p,
-pre {
-  margin: 0;
-}
 *,
 ::before,
 ::after {
@@ -34,15 +31,6 @@ pre {
   border-width: 0;
   border-style: solid;
   border-color: currentColor;
-}
-h1,
-h2 {
-  font-size: inherit;
-  font-weight: inherit;
-}
-a {
-  color: inherit;
-  text-decoration: inherit;
 }
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
@@ -85,7 +73,7 @@ pre {
   width: 100%;
 }
 #welcome {
-  margin-top: 2.5rem;
+  // margin-top: 2.5rem;
 }
 #welcome h1 {
   font-size: 3rem;
@@ -231,8 +219,7 @@ pre {
 .list-item-link:hover svg:last-child {
   transform: translateX(0.25rem);
 }
-#other-links {
-}
+
 .button-pill {
   padding: 1.5rem 2rem;
   transition-duration: 300ms;
