@@ -1,4 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import Sidenav from './components/sidenav/sidenav';
 import routes from './routes';
 import './app.scss';
