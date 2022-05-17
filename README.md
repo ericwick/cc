@@ -1,4 +1,4 @@
-# CC:
+# cc:
 
 This project was generated using [Nx](https://nx.dev).
 
