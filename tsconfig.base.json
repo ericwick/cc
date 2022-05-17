@@ -16,7 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@cc/component-library": ["libs/component-library/src/index.ts"],
-      "@cc/style-guide": ["libs/style-guide/src/lib/scss/_main.scss"]
+      "@cc/style-guide": ["libs/style-guide/src/index.html"]
     }
   },
   "exclude": ["node_modules", "tmp"]
