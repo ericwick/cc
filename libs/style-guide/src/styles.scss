@@ -1,24 +1,24 @@
 // Abstracts
 @import 
-    './lib/scss/abstracts/fonts',
-    './lib/scss/abstracts/mixins',
-    './lib/scss/abstracts/variables',
-    './lib/scss/abstracts/visibility';
+    './scss/abstracts/fonts',
+    './scss/abstracts/mixins',
+    './scss/abstracts/variables',
+    './scss/abstracts/visibility';
 
 // Base Styles
 @import 
-    './lib/scss/base/global',
-    './lib/scss/base/reset',
-    './lib/scss/base/typography';
+    './scss/base/global',
+    './scss/base/reset',
+    './scss/base/typography';
 
 // Layout
 @import 
-    './lib/scss/layouts/footer',
-    './lib/scss/layouts/grid',
-    './lib/scss/layouts/page',
-    './lib/scss/layouts/table';
+    './scss/layouts/footer',
+    './scss/layouts/grid',
+    './scss/layouts/page',
+    './scss/layouts/table';
 
 // Themes
 @import 
-    './lib/scss/themes/basetheme',
-    './lib/scss/themes/darktheme';
+    './scss/themes/basetheme',
+    './scss/themes/darktheme';

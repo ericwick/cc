@@ -22,7 +22,7 @@
         "styles": ["apps/component-library-docs/src/styles.scss"],
         "scripts": [],
         "stylePreprocessorOptions": {
-          "includePaths": ["libs/style-guide/src/index.html"]
+          "includePaths": ["libs/style-guide/src/styles.scss"]
         },
         "webpackConfig": "@nrwl/react/plugins/webpack"
       },

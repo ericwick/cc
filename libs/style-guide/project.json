@@ -4,6 +4,45 @@
   "projectType": "library",
   "tags": [],
   "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outPath}"],"defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "baseHref": "/",
+        "main": "libs/style-guide/src/main.tsx",
+        "outputPath": "dist/libs/style-guide",
+        "tsConfig": "libs/component-library/tsconfig.json",
+        "index": "libs/component-library/src/styles.scss",
+        "styles": ["libs/style-guide/src/styles.scss"],
+        "stylePreProcessorOptions": {
+          "includePaths": ["libs/style-guide/src/styles.scss"]
+        },
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "libs/style-guide/src/environments/environment.ts",
+              "with": "libs/style-guide/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
