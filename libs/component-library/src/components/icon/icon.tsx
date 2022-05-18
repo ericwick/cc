@@ -13,20 +13,19 @@ export interface IconElement {
 
 export function Icon(props: IconProps) {
   const iconsList: IconElement[] = icons;
+  let iconComponent: any;
+
+  // eslint-disable-next-line array-callback-return
+  iconsList.map((e): any => {
+    if (props.iconName === e.iconName) {
+      return (iconComponent = e.icon);
+    }
+  });
+
   return (
-    <>
-      {iconsList.map((e, i): any => {
-        let component: any;
-        if (props.iconName === e.iconName) {
-          component = e.icon;
-        }
-        return (
-          <div key={i} className="icon">
-            {component}
-          </div>
-        );
-      })}
-    </>
+    <div id="icon" aria-label={props.iconName} className="icon">
+      {iconComponent ? iconComponent : null}
+    </div>
   );
 }
 

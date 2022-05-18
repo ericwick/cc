@@ -1,5 +1,6 @@
 import './accordion.scss';
 import AccordionHeader from './accordion-header/accordion-header';
+import { useState } from 'react';
 
 export interface AccordionProps {
   accordion: AccordionContentProps[];
@@ -11,13 +12,30 @@ export interface AccordionContentProps {
 }
 
 export function Accordion(props: AccordionProps) {
-  return (
-    <div className="accordion">
-      {props.accordion.map((e, i) => {
-        return <AccordionHeader key={i} header={e.title} body={e.body} />;
-      })}
-    </div>
-  );
+  const [activeIndex, setActiveIndex] = useState<number>(0);
+  const [active, setActive] = useState<boolean>(false);
+
+  const onTitleClick = (index: number) => {
+    setActiveIndex(index);
+    setActive(active);
+  };
+
+  const renderedItems = props.accordion.map((e, i) => {
+    const active = i === activeIndex ? true : false;
+    return (
+      <AccordionHeader
+        key={i}
+        header={e.title}
+        body={e.body}
+        index={i}
+        onTitleClick={onTitleClick}
+        setActive={setActive}
+        active={active}
+      />
+    );
+  });
+
+  return <div className="accordion">{renderedItems}</div>;
 }
 
 export default Accordion;

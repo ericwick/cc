@@ -21,7 +21,9 @@ export default function AccordionDocs() {
       <h1>Accordions</h1>
       <p>
         The accordion component allows the user to show and hide sections of
-        related content on a page
+        related content on a page. Only one Accordion will open at a time by
+        default and using the 'multipleActive' prop will allow the user to have
+        multiple sections open at once.
       </p>
       <Accordion accordion={exampleAccordion} />
     </div>

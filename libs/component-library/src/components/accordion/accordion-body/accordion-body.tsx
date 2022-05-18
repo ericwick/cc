@@ -1,5 +1,4 @@
 import classname from 'classnames';
-import './accordion-body.scss';
 
 export interface AccordionBodyProps {
   active: boolean;
@@ -11,7 +10,6 @@ export function AccordionBody(props: AccordionBodyProps) {
     'accordion__body--opened': props.active,
     'accordion__body--closed': !props.active,
   });
-  // const chevronClassName = classname();
 
   return (
     <div className={bodyClassName}>
