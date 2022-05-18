@@ -1,3 +1,4 @@
+export * from './components/icon/icon';
 // Exported Components
 export * from './components/dropdown/dropdown';
 export * from './components/radio/radio';

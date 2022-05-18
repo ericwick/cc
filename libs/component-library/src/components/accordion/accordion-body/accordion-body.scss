@@ -1,0 +1,22 @@
+@import '@cc/style-guide';
+.accordion {
+  width: 100%;
+  height: auto;
+  display: flex;
+  background: none;
+  flex-direction: column;
+  margin: 8px 0;
+  background-color: lightgray;
+  color: black;
+
+  &__body {
+    &--opened {
+      background-color: white;
+      padding: 8px 8px 8px 24px;
+    }
+
+    &--closed {
+      display: none;
+    }
+  }
+}

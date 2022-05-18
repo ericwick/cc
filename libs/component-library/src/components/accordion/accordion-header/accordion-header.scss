@@ -58,15 +58,4 @@
       background-color: #cccccc;
     }
   }
-
-  &__body {
-    &--opened {
-      background-color: white;
-      padding: 8px 8px 8px 24px;
-    }
-
-    &--closed {
-      display: none;
-    }
-  }
 }
