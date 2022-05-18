@@ -14,7 +14,6 @@ export function Accordion(props: AccordionProps) {
   return (
     <div className="accordion">
       {props.accordion.map((e, i) => {
-        console.log(i);
         return <AccordionHeader key={i} header={e.title} body={e.body} />;
       })}
     </div>

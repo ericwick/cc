@@ -1,13 +1,32 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import './icon.scss';
+import icons from './index.jsx';
 
-/* eslint-disable-next-line */
-export interface IconProps {}
+export interface IconProps {
+  iconName: string;
+}
+
+export interface IconElement {
+  iconName: string;
+  icon: any;
+}
 
 export function Icon(props: IconProps) {
+  const iconsList: IconElement[] = icons;
   return (
-    <div className="icon">
-      <h1>Welcome to Icon!</h1>
-    </div>
+    <>
+      {iconsList.map((e, i): any => {
+        let component: any;
+        if (props.iconName === e.iconName) {
+          component = e.icon;
+        }
+        return (
+          <div key={i} className="icon">
+            {component}
+          </div>
+        );
+      })}
+    </>
   );
 }
 

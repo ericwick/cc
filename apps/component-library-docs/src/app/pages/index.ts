@@ -1,14 +1,15 @@
 const pages = [
   { name: 'Home', link: '/docs/home' },
-  { name: 'Accordion', link: '/docs/accordion-doc' },
-  { name: 'Button', link: '/docs/button-doc' },
-  { name: 'Card', link: '/docs/card-doc' },
-  { name: 'Checkbox', link: '/docs/checkbox-doc' },
-  { name: 'Checkbox Group', link: '/docs/checkbox-group-doc' },
-  { name: 'Input', link: '/docs/input-doc' },
-  { name: 'Modal', link: '/docs/modal-doc' },
-  { name: 'Radio', link: '/docs/radio-doc' },
-  { name: 'Table', link: '/docs/table-doc' },
+  { name: 'Accordion', link: '/docs/accordion-docs' },
+  { name: 'Button', link: '/docs/button-docs' },
+  { name: 'Card', link: '/docs/card-docs' },
+  { name: 'Checkbox', link: '/docs/checkbox-docs' },
+  { name: 'Checkbox Group', link: '/docs/checkbox-group-docs' },
+  { name: 'Icons', link: '/docs/icons-docs' },
+  { name: 'Input', link: '/docs/input-docs' },
+  { name: 'Modal', link: '/docs/modal-docs' },
+  { name: 'Radio', link: '/docs/radio-docs' },
+  { name: 'Table', link: '/docs/table-docs' },
 ];
 
 export default pages;
