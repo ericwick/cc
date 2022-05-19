@@ -14,7 +14,6 @@ html {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  line-height: 1.5;
   tab-size: 4;
   scroll-behavior: smooth;
 }
@@ -22,6 +21,7 @@ body {
   font-family: inherit;
   line-height: inherit;
   margin: 0;
+  background-color: $primary-color;
 }
 *,
 ::before,
@@ -30,10 +30,6 @@ body {
   border-width: 0;
   border-style: solid;
   border-color: currentColor;
-}
-pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    'Liberation Mono', 'Courier New', monospace;
 }
 svg {
   display: block;
@@ -50,35 +46,12 @@ pre {
   overflow: scroll;
   padding: 0.5rem 0.75rem;
 }
-
-.shadow {
-  box-shadow: 0 0 #0000, 0 0 #0000, 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
-.rounded {
-  border-radius: 1.5rem;
-}
-.wrapper {
-  width: 100%;
-}
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 768px;
-  padding-bottom: 3rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  color: rgba(55, 65, 81, 1);
-  width: 100%;
-}
 #welcome {
-  // margin-top: 2.5rem;
-}
-#welcome h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 500;
-  letter-spacing: -0.025em;
+  letter-spacing: 0.1em;
   line-height: 1;
+  color: $secondary-color;
 }
 #welcome span {
   display: block;
@@ -86,13 +59,14 @@ pre {
   font-weight: 300;
   line-height: 2.25rem;
   margin-bottom: 0.5rem;
+  color: $secondary-color;
 }
 #hero {
   align-items: center;
-  background-color: hsla(214, 62%, 21%, 1);
+  background-color: $secondary-color;
   border: none;
   box-sizing: border-box;
-  color: rgba(55, 65, 81, 1);
+  color: $cc-white;
   display: grid;
   grid-template-columns: 1fr;
   margin-top: 3.5rem;
@@ -166,6 +140,8 @@ pre {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
   width: 100%;
+  text-decoration: none;
+  color: $grayscale2;
 }
 .list-item-link svg:first-child {
   margin-right: 1rem;
@@ -187,7 +163,7 @@ pre {
   transition-duration: 150ms;
 }
 .list-item-link > span > span {
-  color: rgba(107, 114, 128, 1);
+  color: $grayscale2;
   display: block;
   flex-grow: 1;
   font-size: 0.75rem;
@@ -207,13 +183,14 @@ pre {
   width: 1rem;
 }
 .list-item-link:hover {
-  color: rgba(255, 255, 255, 1);
-  background-color: hsla(162, 47%, 50%, 1);
+  transition: $extra-fast ease;
+  color: $grayscale4;
+  background-color: $tertiary-color;
 }
 .list-item-link:hover > span {
 }
 .list-item-link:hover > span > span {
-  color: rgba(243, 244, 246, 1);
+  color: $grayscale4;
 }
 .list-item-link:hover svg:last-child {
   transform: translateX(0.25rem);
@@ -228,6 +205,8 @@ pre {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   align-items: center;
   display: flex;
+  text-decoration: none;
+  color: $cc-white;
 }
 .button-pill svg {
   transition-property: background-color, border-color, color, fill, stroke,
@@ -256,17 +235,23 @@ pre {
 .button-pill:hover {
   color: rgba(255, 255, 255, 1) !important;
 }
-#nx-console:hover {
+#nx-console {
   background-color: rgba(0, 122, 204, 1);
 }
+#nx-console:hover {
+  background-color: rgba(0, 122, 204, 0.8);
+}
 #nx-console svg {
-  color: rgba(0, 122, 204, 1);
+  color: $cc-white;
 }
 #nx-repo:hover {
+  background-color: rgba(24, 23, 23, 0.9);
+}
+#nx-repo {
   background-color: rgba(24, 23, 23, 1);
 }
 #nx-repo svg {
-  color: rgba(24, 23, 23, 1);
+  color: $cc-white;
 }
 #nx-cloud {
   margin-bottom: 2rem;
@@ -312,9 +297,6 @@ pre {
   margin-top: 1.5rem;
   text-align: right;
 }
-#nx-cloud a:hover {
-  text-decoration: underline;
-}
 #commands {
   padding: 2.5rem 2rem;
   margin-top: 3.5rem;
@@ -341,7 +323,6 @@ details {
   margin-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  width: 100%;
 }
 details pre > span {
   color: rgba(181, 181, 181, 1);
@@ -360,7 +341,7 @@ summary {
   transition-duration: 150ms;
 }
 summary:hover {
-  background-color: rgba(243, 244, 246, 1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 summary svg {
   height: 1.5rem;
@@ -368,7 +349,7 @@ summary svg {
   width: 1.5rem;
 }
 #love {
-  color: rgba(107, 114, 128, 1);
+  color: $secondary-color;
   font-size: 0.875rem;
   line-height: 1.25rem;
   margin-top: 3.5rem;

@@ -17,7 +17,7 @@ export const StyledHamburger = styled.button`
   span {
     width: 2rem;
     height: 0.17rem;
-    background: #666875;
+    background: #182139;
     border-radius: 10px;
     transition: all 0.2s linear;
     position: relative;
