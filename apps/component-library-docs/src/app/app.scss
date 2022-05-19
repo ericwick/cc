@@ -16,6 +16,17 @@ html {
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   tab-size: 4;
   scroll-behavior: smooth;
+  overflow-x: auto;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    background-color: $primary-color;
+    width: 3px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $grayscale5;
+    border-radius: 3px;
+  }
 }
 body {
   font-family: inherit;
