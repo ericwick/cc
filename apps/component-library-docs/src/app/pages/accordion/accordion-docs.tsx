@@ -12,7 +12,7 @@ export default function AccordionDocs() {
     },
     {
       title: 'Example Accordion 3',
-      body: 'lorem ipsum 3',
+      body: '',
     },
   ];
 

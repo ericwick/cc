@@ -1,7 +1,7 @@
 import { Dropdown } from '@cc/component-library';
 import { Icon } from '@cc/component-library';
 
-export default function DropdownDocs() {
+export default function ImageDocs() {
   const dropdownContent = (
     <div>
       <Icon iconName="Clock" width={4} />

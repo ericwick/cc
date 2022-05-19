@@ -1,20 +1,43 @@
 @import '@cc/style-guide';
 
 .navbar {
-  position: fixed;
   height: 100vh;
   z-index: 1000;
 
+  &__head {
+    margin-bottom: 0.5rem;
+    text-align: center;
+    padding-bottom: 1.4rem;
+    border-bottom: 1px solid $grayscale3;
+    color: $cc-white;
+
+    &--title {
+      color: $cc-white;
+      font-size: 1.5rem;
+      text-decoration: none;
+
+      &:hover {
+        color: $grayscale4;
+      }
+    }
+  }
+
+  &--break {
+    line-height: 3rem;
+    background-color: green;
+  }
+
   &__link {
-    color: #143157;
-    font-size: 1.3rem;
-    font-weight: 700;
+    color: $cc-white;
+    font-size: 1rem;
     text-decoration: none;
-    transition: color 0.3s linear;
+    padding-left: 1.5rem;
+    opacity: 0.7;
 
     &:hover {
-      color: darkgray;
-      text-decoration: underline;
+      transition: $fast ease-in-out;
+      padding-left: 1.7rem;
+      opacity: 1;
     }
   }
 }

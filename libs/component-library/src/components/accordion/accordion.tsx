@@ -7,8 +7,8 @@ export interface AccordionProps {
 }
 
 export interface AccordionContentProps {
-  title: string;
-  body: string;
+  title?: string;
+  body?: string;
 }
 
 export function Accordion(props: AccordionProps) {
@@ -20,7 +20,7 @@ export function Accordion(props: AccordionProps) {
     setActive(active);
   };
 
-  const renderedItems = props.accordion.map((e, i) => {
+  const accordionContent = props.accordion.map((e, i) => {
     const active = i === activeIndex ? true : false;
     return (
       <AccordionHeader
@@ -35,7 +35,7 @@ export function Accordion(props: AccordionProps) {
     );
   });
 
-  return <div className="accordion">{renderedItems}</div>;
+  return <div className="accordion">{accordionContent}</div>;
 }
 
 export default Accordion;

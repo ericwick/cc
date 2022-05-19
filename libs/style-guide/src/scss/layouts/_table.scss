@@ -1,16 +1,36 @@
 // Table
- table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
 }
 
 // Header
 th {
-    text-align: left;
+  text-align: left;
+  height: auto;
+}
+thead {
+  height: auto;
 }
 
 // Row
 tr {
-    vertical-align: top;
+  vertical-align: top;
+}
+
+// Cells
+td {
+  text-align: center;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+// Body
+tbody {
+}
+
+// Footer
+tfoot {
 }

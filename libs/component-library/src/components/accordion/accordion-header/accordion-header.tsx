@@ -4,8 +4,8 @@ import AccordionBody from '../accordion-body/accordion-body';
 
 export interface AccordionHeaderProps {
   key: number;
-  header: string;
-  body: string;
+  header?: string;
+  body?: string;
   index: number;
   onTitleClick: (index: number) => void;
   setActive: (active: boolean) => void;

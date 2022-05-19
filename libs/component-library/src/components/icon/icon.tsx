@@ -1,9 +1,12 @@
+/* eslint-disable array-callback-return */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import './icon.scss';
 import icons from './index.jsx';
 
 export interface IconProps {
-  iconName: string;
+  iconName?: string;
+  width?: number;
+  color?: string;
 }
 
 export interface IconElement {
@@ -15,15 +18,19 @@ export function Icon(props: IconProps) {
   const iconsList: IconElement[] = icons;
   let iconComponent: any;
 
-  // eslint-disable-next-line array-callback-return
-  iconsList.map((e): any => {
+  iconsList.map(e => {
     if (props.iconName === e.iconName) {
       return (iconComponent = e.icon);
     }
   });
 
   return (
-    <div id="icon" aria-label={props.iconName} className="icon">
+    <div
+      id="icon"
+      style={{ width: `${props.width}rem`, color: `${props.color}` }}
+      aria-label={props.iconName}
+      className="icon"
+    >
       {iconComponent ? iconComponent : null}
     </div>
   );
