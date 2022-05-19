@@ -1,7 +1,6 @@
 import { useState, useRef } from 'react';
 import { Link, To } from 'react-router-dom';
 import {
-  home,
   inputs,
   mobile,
   media,
@@ -59,12 +58,6 @@ export default function Sidenav() {
             cc: Component Library &amp; Style Guide
           </Link>
         </div>
-        <Dropdown
-          icon="Home"
-          title="HOME"
-          width={1.1}
-          content={linksGenerator(home)}
-        />
         <Dropdown
           icon="Pencil"
           title="INPUTS"

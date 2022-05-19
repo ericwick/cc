@@ -5,15 +5,15 @@
   z-index: 1000;
 
   &__head {
-    margin-bottom: 0.5rem;
     text-align: center;
     padding-bottom: 1.4rem;
-    border-bottom: 1px solid $grayscale3;
-    color: $cc-white;
+    border-bottom: 1px solid $primary-color;
+    color: $primary-color;
+    opacity: 0.9;
 
     &--title {
       color: $cc-white;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       text-decoration: none;
 
       &:hover {

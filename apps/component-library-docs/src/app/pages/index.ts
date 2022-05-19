@@ -1,5 +1,3 @@
-export const home = [{ name: 'Home', link: '/docs/home' }];
-
 export const inputs = [
   { name: 'Basic Input', link: '/docs/input-docs' },
   { name: 'Checkbox', link: '/docs/checkbox-docs' },
