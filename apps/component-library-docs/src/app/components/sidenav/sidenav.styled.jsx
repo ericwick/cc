@@ -27,8 +27,8 @@ export const StyledSidenav = styled.ul`
     -webkit-box-shadow: inset 0 0 6px transparent;
   }
   ::-webkit-scrollbar-thumb {
-    background-color: #c1c4dd;
-    outline: 1px solid #c1c4dd;
+    background-color: $secondary-color;
+    outline: 1px solid $secondary-color;
     border-radius: 7px;
   }
 

@@ -1,4 +1,5 @@
-import { StyledHamburger } from './hamburger.styled';
+import './hamburger.scss';
+import { Icon } from '@cc/component-library';
 
 export interface HamburgerProps {
   open: boolean;
@@ -7,16 +8,15 @@ export interface HamburgerProps {
 
 export default function Hamburger({ open, setOpen }: HamburgerProps) {
   const isExpanded = open ? true : false;
+
   return (
-    <StyledHamburger
+    <button
       aria-label={isExpanded ? 'Open menu' : 'close menu'}
-      open={open}
-      aria-expanded={isExpanded}
       onClick={() => setOpen(!open)}
+      aria-expanded={isExpanded}
+      className="hamburger-menu"
     >
-      <span />
-      <span />
-      <span />
-    </StyledHamburger>
+      <Icon iconName="Menu" width={2.3} color="#182139" />
+    </button>
   );
 }
