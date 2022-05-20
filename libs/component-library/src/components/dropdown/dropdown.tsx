@@ -26,9 +26,9 @@ export function Dropdown(props: DropdownProps) {
           <p className="dropdown__header--title--text">{props.title}</p>
         </div>
         {active ? (
-          <Icon iconName="ChevronDown" width={1.5} color="#7a8ab8" />
+          <Icon iconName="ChevronDown" width={1} color="#7a8ab8" />
         ) : (
-          <Icon iconName="ChevronRight" width={1.5} color="#7a8ab8" />
+          <Icon iconName="ChevronRight" width={1} color="#7a8ab8" />
         )}
       </button>
       <div className={contentClassName}>{props.content}</div>

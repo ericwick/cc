@@ -6,24 +6,20 @@
   display: flex;
   background: none;
   flex-direction: column;
-  color: inherit;
 
   &__header {
     display: flex;
-    flex-direction: row;
     align-items: center;
     background-color: transparent;
     padding: $small-spacer;
-    font-size: $medium-text;
+    font-size: $small-text;
     color: inherit;
     opacity: 0.7;
 
     &--title {
       display: flex;
       width: 100%;
-      flex-direction: row;
       align-items: center;
-      color: inherit;
 
       &--text {
         margin: 0;
