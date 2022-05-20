@@ -67,6 +67,8 @@ Run `nx lint` to run linting against typescript code.
 
 ## Running unit tests
 
+Run `yarn test:components` to execute unit test for the component-library.
+
 Run `nx test my-app` to execute the unit tests via [Jest](https://jestjs.io).
 
 Run `nx affected:test` to execute the unit tests affected by a change.

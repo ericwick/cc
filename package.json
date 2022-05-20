@@ -5,7 +5,7 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx run-many --target=build --projects=style-guide,component-library,component-library-docs",
-    "test": "nx test",
+    "test:components": "nx run component-library:test",
     "format": "nx format:write",
     "lint": "nx lint"
   },

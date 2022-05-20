@@ -2,14 +2,15 @@ import classname from 'classnames';
 import Icon from '../../icon/icon';
 import AccordionBody from '../accordion-body/accordion-body';
 
+// Accordion Header & Body content
 export interface AccordionHeaderProps {
   key: number;
   header?: string;
-  body?: string;
   index: number;
   onTitleClick: (index: number) => void;
   setActive: (active: boolean) => void;
   active: boolean;
+  body?: string;
 }
 
 export function AccordionHeader(props: AccordionHeaderProps) {
@@ -18,6 +19,7 @@ export function AccordionHeader(props: AccordionHeaderProps) {
     'accordion__header--closed': !props.active,
   });
 
+  // Activates accordion section
   const onHeaderClick = () => {
     props.onTitleClick(props.index);
     props.setActive(!props.active);

@@ -1,5 +1,6 @@
 import classname from 'classnames';
 
+// Body contents passed from Accordion Header
 export interface AccordionBodyProps {
   active: boolean;
   body?: string;
