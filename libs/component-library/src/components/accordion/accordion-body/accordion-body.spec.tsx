@@ -8,7 +8,7 @@ describe('Accordion Body', () => {
     expect(accordionBody).toBeTruthy();
   });
 
-  //   it('should changed its className when active or inactive', () => {
-  //     expect(accordionBody).toBeTruthy();
-  //   });
+  it('should changed its className when active or inactive', () => {
+    expect(accordionBody).toBeTruthy();
+  });
 });

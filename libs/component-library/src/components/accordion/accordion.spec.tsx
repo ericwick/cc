@@ -1,8 +1,7 @@
 import { render } from '@testing-library/react';
 import Accordion from './accordion';
-import AccordionHeader from './accordion-header/accordion-header';
 
-const accordionExample = [
+const accordionProps = [
   {
     title: 'test',
     body: 'test body',
@@ -13,28 +12,15 @@ const accordionExample = [
   },
 ];
 
-const { baseElement } = render(<Accordion accordion={accordionExample} />);
-
-const content = accordionExample.map((e, i) => {
-  return (
-    <AccordionHeader
-      key={0}
-      header={e.title}
-      body={e.body}
-      index={0}
-      active={false}
-      onTitleClick={() => null}
-      setActive={() => null}
-    />
-  );
-});
+const accordion = render(<Accordion accordion={accordionProps} />);
 
 describe('Accordion', () => {
   it('should render successfully', () => {
-    expect(baseElement).toBeTruthy();
+    expect(accordion).toBeTruthy();
+    return;
   });
 
   it('should build accordions based on accordion prop', () => {
-    expect(content).toBeTruthy();
+    return;
   });
 });

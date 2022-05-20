@@ -1,11 +1,11 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { StrictMode } from 'react';
-import * as ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 import App from './app/app';
 import { BrowserRouter } from 'react-router-dom';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+const app = document.getElementById('root');
+const root = createRoot(app!);
 
 root.render(
   <StrictMode>
