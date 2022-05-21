@@ -16,7 +16,7 @@ export const StyledSidenav = styled.ul`
   list-style: none;
 
   transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 
   ::-webkit-scrollbar {
     width: 2px;
