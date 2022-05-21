@@ -2,33 +2,31 @@ import styled from 'styled-components';
 
 export const StyledSidenav = styled.ul`
   position: fixed;
-  width: 30%;
+  max-width: 17rem;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
   background: #182139;
-  height: 100vh;
+  height: 100%;
   top: 0;
   margin: 0;
-  padding: 0.74rem;
+  padding: 1rem;
   list-style: none;
-  line-height: 1.7rem;
 
   transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
   transition: transform 0.3s ease-in-out;
 
   ::-webkit-scrollbar {
-    width: 0.1em;
+    width: 2px;
   }
   ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px transparent;
     -webkit-box-shadow: inset 0 0 6px transparent;
   }
   ::-webkit-scrollbar-thumb {
-    background-color: $secondary-color;
-    outline: 1px solid $secondary-color;
+    background-color: #f8f7ff;
     border-radius: 7px;
   }
 
