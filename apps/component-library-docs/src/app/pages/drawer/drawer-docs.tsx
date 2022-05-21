@@ -1,10 +1,10 @@
 import { Link } from '@cc/component-library';
 
-export default function LinkDocs() {
+export default function DrawerDocs() {
   return (
     <div>
-      <h1>Links</h1>
-      <p>The link component...</p>
+      <h1>Drawers</h1>
+      <p>The Drawers component...</p>
       <Link />
     </div>
   );

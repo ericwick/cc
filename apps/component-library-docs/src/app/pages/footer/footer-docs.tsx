@@ -1,10 +1,10 @@
 import { Link } from '@cc/component-library';
 
-export default function LinkDocs() {
+export default function FooterDocs() {
   return (
     <div>
-      <h1>Links</h1>
-      <p>The link component...</p>
+      <h1>Footers</h1>
+      <p>The Footer component...</p>
       <Link />
     </div>
   );

@@ -1,10 +1,10 @@
 import { Link } from '@cc/component-library';
 
-export default function LinkDocs() {
+export default function SpacerDocs() {
   return (
     <div>
-      <h1>Links</h1>
-      <p>The link component...</p>
+      <h1>Spacers</h1>
+      <p>The Spacer component...</p>
       <Link />
     </div>
   );
