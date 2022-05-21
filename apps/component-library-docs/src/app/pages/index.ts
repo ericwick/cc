@@ -50,8 +50,6 @@ export const layout = [
 
 export const utilities = [
   { name: 'File Uploader', link: '/docs/file-uploader-docs' },
-  { name: 'Container', link: '/docs/container-docs' },
-  { name: 'Spacer', link: '/docs/spacer-docs' },
 ];
 
 export const mobile = [
