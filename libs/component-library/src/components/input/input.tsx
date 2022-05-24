@@ -16,7 +16,7 @@ export interface ccInput {
   // formonvalidate?: null;
   // formtarget?: null;
   fullWidth?: boolean; // makes input the full length of parent container
-  // helperText?: string; //text used to describe error to better assist user
+  helperText?: string; //text used to describe error to better assist user
   id?: string;
   label?: string; // label for the input, necessary for accessibility
   // max?: number;
@@ -39,11 +39,10 @@ export interface ccInput {
 
 export const Input: FC<ccInput> = props => {
   return (
-    <label htmlFor={props.id}>
-      {props.label}
+    <div className="input">
       <input
+        className="input__field"
         id={props.id}
-        className="input"
         name={props.name}
         value={props.value}
         type={props.type}
@@ -55,7 +54,11 @@ export const Input: FC<ccInput> = props => {
         disabled={props.disabled}
         onChange={props.onChange}
       />
-    </label>
+      <label htmlFor={props.id} className="input__label">
+        {props.label ? props.label : null}
+      </label>
+      <p className="input__helper-text">{props.helperText}</p>
+    </div>
   );
 };
 
