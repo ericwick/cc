@@ -37,7 +37,7 @@ export default function InputsDocs() {
           type="text"
           label="Basic Input"
           placeholder="type something here"
-          helperText="This input is a basic input"
+          helperText="type=text"
           disabled={false}
           required={false}
           readonly={false}
@@ -59,7 +59,7 @@ export default function InputsDocs() {
           label="Disabled"
           placeholder="Disabled"
           disabled={true}
-          helperText="This input is disabled"
+          helperText="disabled={true}"
         />
         <Input
           id="read-only"
@@ -68,7 +68,7 @@ export default function InputsDocs() {
           type="text"
           label="Read Only"
           readonly={true}
-          helperText="This input is read-only"
+          helperText="readonly={true}"
         />
         <Input
           id="required"
@@ -79,17 +79,17 @@ export default function InputsDocs() {
           placeholder="Required"
           onChange={handleRequired}
           required={true}
-          helperText="This input is required"
+          helperText="required={true}"
         />
         <Input
           id="email"
           name="email"
           value={email}
-          type="text"
-          label="Email Address"
+          type="email"
+          label="Email"
           placeholder="Enter email address"
           onChange={handleEmail}
-          helperText="This input is for email addresses"
+          helperText="type=email"
         />
         <Input
           id="numbers"
@@ -99,7 +99,38 @@ export default function InputsDocs() {
           label="Numbers Only"
           placeholder="Enter some numbers"
           onChange={handleNumber}
-          helperText="This input is for numbers only"
+          helperText="type=number"
+        />
+      </div>
+      <div>
+        <h4>Input Sizes</h4>
+        <p>
+          The Input has three different sizes: 'small', 'normal', 'large'. It
+          can also span the width of its parent component by using `fullWidth`.
+        </p>
+        <Input
+          id="small"
+          name="small"
+          type="text"
+          label="Small Input"
+          placeholder="Small Input"
+          helperText="size=small"
+        />
+        <Input
+          id="normal"
+          name="normal"
+          type="text"
+          label="Normal Input"
+          placeholder="Normal Input"
+          helperText="size=normal"
+        />
+        <Input
+          id="large"
+          name="large"
+          type="text"
+          label="Large Input"
+          placeholder="Large Input"
+          helperText="size=large"
         />
       </div>
     </div>
