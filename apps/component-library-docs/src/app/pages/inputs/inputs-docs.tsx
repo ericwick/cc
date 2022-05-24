@@ -12,13 +12,28 @@ export default function InputsDocs() {
     <div>
       <h1>Inputs</h1>
       <p>The input component ...</p>
+      <p>
+        <Input
+          id="test"
+          name="tester"
+          value={value}
+          type="text"
+          label="Test Input"
+          placeholder="test input"
+          disabled={false}
+          required={false}
+          readonly={false}
+          onChange={handleChange}
+        />
+      </p>
       <Input
-        id="test"
-        name="tester"
-        value={value}
+        id="disabled"
+        name="disabled"
+        value="this input is disabled"
         type="text"
-        placeholder="test input"
-        disabled={false}
+        label="Disabled Input"
+        placeholder="Disabled input"
+        disabled={true}
         required={false}
         readonly={false}
         onChange={handleChange}
