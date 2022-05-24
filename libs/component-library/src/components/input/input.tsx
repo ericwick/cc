@@ -1,4 +1,5 @@
 import { FC, ChangeEvent } from 'react';
+import classname from 'classnames';
 import './input.scss';
 
 export interface ccInput {
@@ -33,15 +34,27 @@ export interface ccInput {
   size?: 'small' | 'normal' | 'large'; // input size
   // src?: null; // only valid for image input type, URL
   // step?: null; // validation for numeric input types
-  type?: 'text' | 'email' | 'number';
+  type?:
+    | 'text'
+    | 'email'
+    | 'number'
+    | 'password'
+    | 'search'
+    | 'file'
+    | 'tel'
+    | 'time'
+    | 'url'
+    | 'week'
+    | 'date';
   value?: any;
 }
 
 export const Input: FC<ccInput> = props => {
+  const inputStyle = classname('input__field', {});
   return (
     <div className="input">
       <input
-        className="input__field"
+        className={inputStyle}
         id={props.id}
         name={props.name}
         value={props.value}

@@ -12,7 +12,6 @@
     border: 1px solid $cc-white;
     border-radius: 0.25rem;
     background-color: transparent;
-    // background-color: $cc-white;
     -webkit-appearance: none;
     -ms-appearance: none;
     -moz-appearance: none;
@@ -43,7 +42,6 @@
     &:focus {
       transition: top 0.4s ease, color 0.4s ease, font-size 0.4s ease;
       outline: none;
-      //   border: 1.25px solid $cc-white;
       box-shadow: 0 0 0.2rem $cc-white;
     }
 
