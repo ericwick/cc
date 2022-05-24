@@ -12,15 +12,27 @@
     border: 1px solid $cc-white;
     border-radius: 0.25rem;
     background-color: transparent;
+    // background-color: $cc-white;
     -webkit-appearance: none;
     -ms-appearance: none;
     -moz-appearance: none;
     appearance: none;
 
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      display: none;
+    }
+
     &:disabled {
       background-color: $grayscale3;
       border: 1px solid $grayscale3;
       opacity: 0.9;
+    }
+
+    &:autofill,
+    &:-webkit-autofill {
+      background-color: transparent !important;
+      color: $cc-white !important;
     }
 
     &::placeholder {
@@ -53,10 +65,10 @@
     position: absolute;
     border-radius: 0.25rem;
     left: 10px;
-    bottom: 60%;
+    bottom: 70%;
     top: 22px;
     padding: 0 2px;
-    transform: translateY(-50%);
+    transform: translateY(-77%);
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;

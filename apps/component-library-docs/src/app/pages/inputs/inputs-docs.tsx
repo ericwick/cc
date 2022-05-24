@@ -3,9 +3,21 @@ import { useState, ChangeEvent } from 'react';
 
 export default function InputsDocs() {
   const [value, setValue] = useState('');
+  const [required, setRequired] = useState('');
+  const [email, setEmail] = useState('');
+  const [number, setNumber] = useState('');
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleValue = (e: ChangeEvent<HTMLInputElement>) => {
     setValue(e.target.value);
+  };
+  const handleRequired = (e: ChangeEvent<HTMLInputElement>) => {
+    setRequired(e.target.value);
+  };
+  const handleEmail = (e: ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+  };
+  const handleNumber = (e: ChangeEvent<HTMLInputElement>) => {
+    setNumber(e.target.value);
   };
 
   return (
@@ -29,7 +41,7 @@ export default function InputsDocs() {
           disabled={false}
           required={false}
           readonly={false}
-          onChange={handleChange}
+          onChange={handleValue}
         />
       </div>
       <div>
@@ -57,6 +69,37 @@ export default function InputsDocs() {
           label="Read Only"
           readonly={true}
           helperText="This input is read-only"
+        />
+        <Input
+          id="required"
+          name="required"
+          value={required}
+          type="text"
+          label="Required"
+          placeholder="Required"
+          onChange={handleRequired}
+          required={true}
+          helperText="This input is required"
+        />
+        <Input
+          id="email"
+          name="email"
+          value={email}
+          type="text"
+          label="Email Address"
+          placeholder="Enter email address"
+          onChange={handleEmail}
+          helperText="This input is for email addresses"
+        />
+        <Input
+          id="numbers"
+          name="numbers"
+          value={number}
+          type="number"
+          label="Numbers Only"
+          placeholder="Enter some numbers"
+          onChange={handleNumber}
+          helperText="This input is for numbers only"
         />
       </div>
     </div>
