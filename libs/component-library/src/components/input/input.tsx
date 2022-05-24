@@ -1,7 +1,7 @@
+import { FC } from 'react';
 import './input.scss';
 
-/* eslint-disable-next-line */
-export interface InputProps {
+export interface ccInput {
   accept?: null;
   alt?: string;
   autocomplete?: null;
@@ -33,7 +33,7 @@ export interface InputProps {
   value?: any;
 }
 
-export function Input(props: InputProps) {
+export const Input: FC<ccInput> = props => {
   return (
     <label htmlFor={props.id}>
       {props.label}
@@ -56,6 +56,6 @@ export function Input(props: InputProps) {
       />
     </label>
   );
-}
+};
 
 export default Input;
