@@ -112,6 +112,7 @@ export default function InputsDocs() {
           id="small"
           name="small"
           type="text"
+          size="small"
           label="Small Input"
           placeholder="Small Input"
           helperText="size=small"
@@ -120,6 +121,7 @@ export default function InputsDocs() {
           id="normal"
           name="normal"
           type="text"
+          size="normal"
           label="Normal Input"
           placeholder="Normal Input"
           helperText="size=normal"
@@ -128,9 +130,19 @@ export default function InputsDocs() {
           id="large"
           name="large"
           type="text"
+          size="large"
           label="Large Input"
           placeholder="Large Input"
           helperText="size=large"
+        />
+        <Input
+          id="full-width"
+          name="full-width"
+          type="text"
+          label="Full Width Input"
+          placeholder="Full Width Input"
+          fullWidth={true}
+          helperText="fullWidth={true}"
         />
       </div>
     </div>

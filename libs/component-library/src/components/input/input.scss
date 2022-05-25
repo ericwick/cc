@@ -4,7 +4,7 @@
   margin: 1rem 0;
 
   &__field {
-    width: 20rem;
+    width: 30%;
     padding: 0.75rem;
     color: $cc-white;
     font-weight: 500;
@@ -17,6 +17,20 @@
     -moz-appearance: none;
     appearance: none;
 
+    &--full-width {
+      width: 100% !important;
+    }
+
+    &--small {
+      width: 20% !important;
+      font-size: 1rem !important;
+      padding: 0.6rem;
+    }
+
+    &--large {
+      width: 50% !important;
+    }
+
     &::-webkit-outer-spin-button,
     &::-webkit-inner-spin-button {
       display: none;
@@ -25,7 +39,6 @@
     &:disabled {
       background-color: $grayscale3;
       border: 1px solid $grayscale3;
-      opacity: 0.9;
     }
 
     &:autofill,
