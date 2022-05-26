@@ -1,5 +1,4 @@
 @import '@cc/style-guide';
-
 #doc-site {
   display: flex;
   flex-direction: row;
@@ -44,7 +43,6 @@ body {
 }
 svg {
   display: block;
-  vertical-align: middle;
   shape-rendering: auto;
   text-rendering: optimizeLegibility;
 }
@@ -197,8 +195,6 @@ pre {
   transition: $extra-fast ease;
   color: $grayscale4;
   background-color: $tertiary-color;
-}
-.list-item-link:hover > span {
 }
 .list-item-link:hover > span > span {
   color: $grayscale4;
