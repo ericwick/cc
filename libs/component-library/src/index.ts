@@ -1,3 +1,4 @@
+export * from './components/header/header';
 export * from './components/input/input';
 // Exported Components
 export * from './components/input/input';
