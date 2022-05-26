@@ -1,6 +1,13 @@
+@import '@cc/style-guide';
 .header {
   top: 0;
   left: 0;
-  //   position: fixed;
   width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(122, 138, 184, 0.7);
+  backdrop-filter: blur(7px);
 }
