@@ -1,0 +1,31 @@
+.button {
+  border: 1px solid black;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  height: 3rem;
+
+  &__full-width {
+    width: 100%;
+  }
+
+  &__disabled {
+    border: 1px solid lightgray;
+    color: lightgray;
+
+    &:hover {
+      cursor: default !important;
+    }
+  }
+
+  &__small {
+    height: 2rem;
+  }
+
+  &__large {
+    height: 4rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
