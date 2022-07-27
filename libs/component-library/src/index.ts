@@ -1,6 +1,6 @@
+// Exported Components
 export * from './components/header/header';
 export * from './components/input/input';
-// Exported Components
 export * from './components/input/input';
 export * from './components/dropdown/dropdown';
 export * from './components/radio/radio';
