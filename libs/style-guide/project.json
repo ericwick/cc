@@ -1,4 +1,5 @@
 {
+  "name": "style-guide",
   "$schema": "..\\..\\node_modules\\nx\\schemas\\project-schema.json",
   "sourceRoot": "libs/style-guide/src",
   "projectType": "library",
@@ -49,7 +50,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/style-guide"],
+      "outputs": ["{workspaceRoot}/coverage/libs/style-guide"],
       "options": {
         "jestConfig": "libs/style-guide/jest.config.js",
         "passWithNoTests": true
